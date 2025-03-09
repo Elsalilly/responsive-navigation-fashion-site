@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/072cf4aaf6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles/burger.css">
+    <title>Burger</title>
+</head>
+<body>
+        <div class="nav" id="nav-bar">
+            <a href="#" class="active">Merezdo Shirts & CO.</a>
+            <a href="#">About Us</a>
+            <a href="#">Collection</a>
+            <a href="#">Location</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+        
+        <script>
+            function myFunction() {
+                let burger = document.getElementById("nav-bar");
+                if (burger.className === "nav") {
+                    burger.className += " responsive";
+                } else {
+                    burger.className = "nav";
+                }
+                }
+        </script>
+</body>
+</html>
