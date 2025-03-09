@@ -32,8 +32,9 @@ a {
     border-radius: 10px;
     border: solid 1px #fff4f4;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 10px 10px;
     margin-left: 20px;
 }
@@ -45,7 +46,9 @@ a {
     font-weight: 400;
     font-style: normal; 
     color: #fff4f4;
-    transform: translateY(-4px);
+    width: 150px;
+    height:20px;
+    transform: translateY(-3px);
 }
 
 .nav_link {
@@ -290,23 +293,17 @@ main {
     .main_row {
         width: 450px;
         height: 800px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .main_img-row {
-        margin-top: -70px;
-        width: 450px;
-        height: 750px;
+        margin-top: 130px;
     }
     .link-bar {
-        margin-bottom: -40px;
+        margin-bottom: -130px;
     }
     .fashion-img {
         width: 450px;
-        height: 240px;
-    }
-        
+        height: 250px;
+        margin-bottom: 30px;
+        margin-top: 130px;
+    }    
 }
 
 @media screen and (max-width: 950px) {
@@ -345,6 +342,7 @@ main {
     }
     .box-text {
         width: 600px;
+        height: 150px;
     }
     .block-text {
         font-size: 15px;
@@ -364,19 +362,23 @@ main {
     }
 
     .main_row {
+        margin-top: 70px;
         width: 450px;
-        height: 650px;
+        height: 830px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 45px;
+        margin-left: 55px;
     }
+
     .link-bar {
-        margin-bottom: -40px;
+        margin-bottom: 20px;
     }
+
     .fashion-img {
+        margin-top: 70px;
         width: 450px;
-        height: 240px;
+        height: 250px;
     }
 }
 
@@ -411,15 +413,17 @@ main {
         margin-bottom: 60px;
     }
     .img-head {
-        width: 450px;
+        width: 470px;
         height: 350px;
     }
     .box-text {
-        width: 450px;
+        width: 470px;
         height: 100px;
     }
     .block-text {
-        font-size: 11px;
+        display: flex;
+        align-self: center;
+        font-size: 12px;
         margin-left: 10px;
     }
     .light-arrow {
@@ -427,17 +431,19 @@ main {
         margin-right: 10px;
     }
     .main_row {
+        margin-top: 70px;
         width: 450px;
-        height: 500px;
+        height: 750px;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: -3px;
+        margin-left: 25px;
     }
     .link-bar {
-        margin-bottom: -40px;
+        margin-bottom: 20px;
     }
     .fashion-img {
         width: 400px;
+        height: 250px;
     }
 }
